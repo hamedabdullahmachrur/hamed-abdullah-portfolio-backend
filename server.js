@@ -14,9 +14,10 @@ connectDB().then(() => {
 
   // ── Middleware ──
   app.use(cors({
-    origin: ['https://hamedabdullahmachrur.netlify.app/'],
+    origin: ['https://hamedabdullahmachrur.netlify.app'],
     credentials: true,
   }));
+
   app.use(express.json());
   app.use(express.urlencoded({ extended: false }));
 
