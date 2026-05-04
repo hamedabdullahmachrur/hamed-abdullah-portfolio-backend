@@ -13,9 +13,8 @@ connectDB().then(() => {
   const app = express();
 
   // ── Middleware ──
-  // In backend/server.js — update this line:
   app.use(cors({
-    origin: ['https://your-site.netlify.app'],
+    origin: ['https://hamedabdullahmachrur.netlify.app/'],
     credentials: true,
   }));
   app.use(express.json());
